@@ -1,8 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-  background-color:indigo;
-    /* max-width: 1300px; */
+     max-width: 1200px; 
+}
+body{
+    margin: 0;
+    height: 700px;
+     background-image: url('assets/hero-bg.png');
+     background-repeat: no-repeat;
+     width: 1200px;
+     background-position: center center;
+     background-size: cover;
 }
 nav{ 
     margin-top: 10px;
@@ -26,15 +34,16 @@ span{
 
 }
 .btn{
-    border-radius: 20px;
     background-color: rgb(193, 88, 192);
     color: white;
-    align-items: center;
     border: none;
-    padding-bottom: 2px;
     margin-right: 300px;
-
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    align-items: center;
 }
+
 .btn>img{ 
     background: none;
   
@@ -43,61 +52,68 @@ span{
     display: none;
 }
 #banner{  
-   /* border: 3px solid blue; */
-   max-width: 1300px;
-   height: 700px;
+   max-width: 1200px;
+   height: 1000px; 
    color: white;
    
 }
 #banner .images{ 
     display: flex;
     flex-wrap: nowrap;
+   align-items: center;
     flex-direction: column;
-    align-items: center;
-}
-/* .banner .circle{ */
-    position: absolute;
-    margin-top: 100px;
-  }
-/* .banner .microphone{ */
-    
-       position: absolute;
-       padding-top: 100px;
-       background: none;
-       margin-top: 90px;
 }
 
+#banner .circle{ 
+    position: relative;
+    margin-top: 5rem;
+  }
+#banner .microphone{ 
+    
+    position: absolute;
+    background: none;
+    margin-top: 9rem;
+}
+   
 .button{ 
     display: flex;
-    row-gap: 8px;
-   
-    
-}
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+   }
 .button .btn1{ 
     color: white;
     background-color: rgba(226, 43, 198, 0.799);
     border-radius: 20px;
-    border: 5px;
     margin-top: 10px;
-    padding: 4px 3px;
-    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
 }
+
+
 .button .btn2{ 
     margin-top: 10px;
     border-radius: 20px;
     color: olivedrab;
     border: 2px solid green;
-    padding: 4px 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+ 
 }
 
 #about{ 
    justify-items: center;
     align-items: center;
     color: white;
-    height: 200px;
+    height: 500px
+    
 }
 #about p{ 
-       margin-top: 10px;
+       /* margin-top: 10px; */
        font-weight: bold;
        justify-content: center;
        color: gray;
@@ -111,6 +127,66 @@ span{
  #review p{
     color: azure;
  }   
+.cards{
+   color: white;
+    display: grid;
+    justify-items: center;
+   
+}
+.cards h2{
+    margin: 50px;
+}
+   
+   
+
+
+.cards-containers{
+    gap: 20px;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: repeat(2, 1fr);
+  width: 920px;
+  background-color:darkslateblue;
+  
+ 
+ 
+}
+.cards,img,h4,p{ 
+     padding: 10px 10px;
+}
+.cards-1{
+     grid-row: 1/span 2;
+ align-content: center;
+ 
+
+}
+.cards-2{
+   grid-column:2/span 2;
+  
+}
+
+ .cards-3{
+grid-column: 2/span 2;
+justify-items:left;
+}
+
+
+.cards-4{
+    grid-column: 1/span 2;
+     
+}
+
+
+
+.cards-5{
+ grid-column: 3/span 1;
+
+ }
+#featured{
+ z-index: 1;  
+}
+
+ 
 
 
 
@@ -121,13 +197,7 @@ span{
 
 
 
-
-
-
-
-
-
- @media screen and (max-width:576px){  
+@media screen and (max-width:576px){  
 .menu,.btn{
     display: none;
 } 
@@ -138,8 +208,8 @@ span{
     }
  .hamburger{
     display: inline;  
-    padding-right: 20px;
-}
+    margin-right: 150px;
+    padding-right: 31rem;
 #review{
     flex-wrap: wrap;
     grid-template-columns: (2, 1fr);
