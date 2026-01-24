@@ -184,17 +184,30 @@ border-radius: 10px;
 }
 #featured{ 
   background-color: rgb(32, 25, 80);
-  /* margin-left: 50px; */
+
 }
 
 #featured h2{ 
     color: white;
     margin: 0 40% 5%;
+    padding-top: 30px;
   
 }
 .feature-container{ 
    display: flex;
     justify-content: space-evenly;
+}
+.episods{
+  border: 1px solid  rgb(134, 126, 189);
+  border-radius: 17px;
+}
+.Remote-work{
+    border: 1px solid  rgb(134, 126, 189);
+     border-radius: 17px;
+}
+.Roadmap{
+    border: 1px solid  rgb(134, 126, 189);
+    border-radius: 17px;
 }
 .feature-container h3{
     color: antiquewhite;
@@ -205,17 +218,7 @@ border-radius: 10px;
 .feature-container p{
      color: azure;     
     margin-left: 10px;
-
-}
-.episods{ 
-   border: 5px solid red;  
-}
-.Remote-work{
-  
-}
-.roadmap{
-
-}
+ }
 .feature-container .clock{
     display: flex;
     color: greenyellow;
