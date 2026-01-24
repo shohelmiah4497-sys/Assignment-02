@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* max-width: 1200px; */
+     
+}
+body{
+    height: 700px;
+     background-image: url('assets/hero-bg.png');
+     background-repeat: no-repeat;
+      /* max-width: 1100px; */
+     background-position: center center;
+     background-size: cover;
+}
+nav{ 
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+   margin-left: 100px;
+   justify-items: center;
+   color: white;
+  
+}
+span{
+    color:rgb(224, 150, 232) ;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+     list-style: none;
+
+}
+.btn{
+    background-color: rgb(193, 88, 192);
+    color: white;
+    border: none;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.btn>img{ 
+    background: none;
+  
+}
+.hamburger{
+    display: none;
+}
+#banner{  
+   max-width: 1200px;
+   color: white;
+   margin-top: 50px;
+}
+#banner .images{ 
+    display: flex;
+    flex-wrap: nowrap;
+   align-items: center;
+    flex-direction: column;
+}
+
+#banner .circle{ 
+    position: relative;
+    margin-top: 1rem;
+  }
+#banner .microphone{ 
+    
+    position: absolute;
+    background: none;
+    margin-top: 5.5rem;
+}
+   
+.button{ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+   }
+.button .btn1{ 
+    color: white;
+    background-color: rgba(226, 43, 198, 0.799);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 4px 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    gap: 5px
+}
+
+
+.button .btn2{ 
+    margin-top: 10px;
+     padding: 4px 3px;
+    border-radius: 20px;
+    color: olivedrab;
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+     gap: 5px
+ 
+}
+
+#about{ 
+    margin-top: 40px;
+   justify-items: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(32, 25, 80);
+ 
+    
+}
+#about p{
+       font-weight: bold;
+       justify-content: center;
+       color: gray;
+    }
+#review{
+    background-color: rgb(32, 25, 80);
+    display: flex;
+    justify-content: space-around;
+    color: green;
+}
+ #review p{ 
+    color: azure;
+ }   
+.cards{ 
+   color: white;
+    display: grid;
+    justify-items: center;
+   background-color: rgb(32, 25, 80);
+  
+
+}
+.cards h2{
+    margin: 20px;
+}
+.cards-containers{ 
+gap: 20px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+  width: 920px;
+}
+.cards,img,h4,p{
+     padding: 10px 10px;
+
+}
+.cards-1{ 
+     grid-row: 1/span 2;
+ align-content: center;
+ border: 2px solid steelblue;
+border-radius: 10px;
+}
+.cards-2{
+   grid-column:2/span 2;
+  border: 2px solid steelblue;
+  border-radius: 10px;
+}
+
+
+.cards-3{
+grid-column: 2/span 2;
+justify-items:left;
+border: 2px solid steelblue;
+border-radius: 10px;
+}
+.cards-4{ 
+    grid-column: 1/span 2;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+}
+.cards-5{
+ grid-column: 3/span 1;
+ border: 2px solid steelblue;
+ border-radius: 10px;
+}
+#featured{ 
+  background-color: rgb(32, 25, 80);
+  /* margin-left: 50px; */
+}
+
+#featured h2{ 
+    color: white;
+    margin: 0 40% 5%;
+  
+}
+.feature-container{ 
+   display: flex;
+    justify-content: space-evenly;
+}
+.feature-container h3{
+    color: antiquewhite;
+     margin-left: 10px;
+     
+}
+
+.feature-container p{
+     color: azure;     
+    margin-left: 10px;
+
+}
+.episods{ 
+   border: 5px solid red;  
+}
+.Remote-work{
+  
+}
+.roadmap{
+
+}
+.feature-container .clock{
+    display: flex;
+    color: greenyellow;
+    align-items: center;
+}
+
+
+
+.host{
+    margin-left: 10px;
+    justify-items: center;
+    background-color: rgb(32, 25, 80);
+}
+.host h1{
+    color: white;
+    padding-top: 20px;
+}
+.host-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.alex h3{
+    color: white;
+}
+.alex p{
+    color: gray;
+}
+ .social{
+    margin-top: 5px;
+ }
+footer{
+    background-color: rgb(32, 25, 80);
+    justify-items: center;
+}
+footer .image{
+    position: absolute;
+}
+.footer-header{
+    position: relative;
+    padding-top: 10rem;
+}
+.footer-header h1{
+     margin-bottom: 30px;
+    margin-left: 37%; 
+    color: white;
+
+}
+.footer-container{ 
+     display: flex;
+    justify-content: center;
+    color:white;
+}
+ .spotify{
+   display: flex;
+}
+.apple{
+    display: flex;
+   
+}
+.youtube{
+   display: flex;
+}
+.twitter{
+    display: flex;
+}
+.copy{
+    position: relative;
+    color: grey;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:576px){ 
+  *{   max-width: 576px;
+   
+ }
+.menu,.btn{
+    display: none;
+} 
+#banner{
+    display: block;
+   max-width: 576px;
+   justify-content: center;
+    }
+ .hamburger{
+    display: inline;  
+   }  
+  #about{
+    margin-top: 60px;
+
+  } 
+    
+#review{
+    display:flexbox;
+    justify-content: space-around;
+    grid-template-columns: (2, 2fr);
+
+}
+.cards-containers{
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.cards-1{
+    grid-row: 1/span 1;
+    
+}
+  }
